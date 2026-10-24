@@ -42,7 +42,7 @@
 ### 1. Создать проект Supabase и применить миграцию
 
 1. Создайте проект в выбранной организации и регионе рядом с пользователями (для Узбекистана разумный выбор — `eu-central-1`).
-2. В SQL Editor примените файл `supabase/migrations/202610240001_employee_qr_passes.sql` целиком. Миграция создаёт таблицы, приватные бакеты, RLS и RPC `verify_pass`.
+2. В SQL Editor примените файлы из `supabase/migrations` по порядку: `202610240001_employee_qr_passes.sql`, затем `202610240002_harden_employee_qr_passes.sql`. Они создают таблицы, приватные бакеты, RLS и RPC `verify_pass`, а также закрывают служебные SECURITY DEFINER-функции от анонимного вызова.
 3. Включите Email/Password в Authentication → Sign In / Providers.
 4. В Storage убедитесь, что бакеты `employee-photos` и `contracts` остаются приватными.
 
