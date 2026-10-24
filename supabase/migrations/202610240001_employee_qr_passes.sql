@@ -135,7 +135,7 @@ using (bucket_id='contracts' and (select public.current_app_role())='admin')
 with check (bucket_id='contracts' and (select public.current_app_role())='admin');
 
 create or replace function public.verify_pass(p_token text)
-returns table(full_name text, position text, photo_path text, employee_status text, pass_valid_until date, result text)
+returns table(full_name text, "position" text, photo_path text, employee_status text, pass_valid_until date, result text)
 language plpgsql security definer set search_path = '' as $$
 declare
   v_uid uuid := auth.uid();
