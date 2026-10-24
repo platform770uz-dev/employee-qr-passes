@@ -1,6 +1,6 @@
 export const CONFIG = {
-  supabaseUrl: 'https://YOUR_PROJECT_REF.supabase.co',
-  supabaseKey: 'YOUR_PUBLISHABLE_OR_ANON_KEY',
+  supabaseUrl: 'https://trxnsqpdekokqvtefxlt.supabase.co',
+  supabaseKey: 'sb_publishable_QLRbWoALFhs9nzyfMM8tug_U79LTk_l',
   githubUsername: 'platform770uz-dev',
   repoName: 'employee-qr-passes',
   organizationName: 'Организация',
